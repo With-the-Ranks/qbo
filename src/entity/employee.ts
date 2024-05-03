@@ -8,6 +8,9 @@
 /**
  * https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/employee
  */
+
+import { Address } from "./shared";
+
 export interface EmployeeQboData {
   Id: string;
   SyncToken: string;
@@ -40,23 +43,6 @@ export interface EmployeeQboData {
   domain?: string;
   sparse?: boolean;
   V4IDPseudonym?: string;
-}
-/**
- * QBO mailing address
- */
-export interface Address {
-  Id: string;
-  PostalCode?: string;
-  City?: string;
-  Country?: string;
-  Line5?: string;
-  Line4?: string;
-  Line3?: string;
-  Line2?: string;
-  Line1?: string;
-  Lat?: string;
-  Long?: string;
-  CountrySubDivisionCode?: string;
 }
 /**
  * QBO email address
